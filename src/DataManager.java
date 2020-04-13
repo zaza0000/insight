@@ -50,7 +50,7 @@ public class DataManager {
             return;
         }
         complaintsID.add(id);
-        String product = arr[fieldToIndex.get("Product")];
+        String product = arr[fieldToIndex.get("Product")].toLowerCase();
         String company = arr[fieldToIndex.get("Company")];
         int year = 0;
         if (arr[fieldToIndex.get("Date received")].indexOf("-") != -1) {
