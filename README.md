@@ -22,6 +22,10 @@ The ProductYear class contains three variables: the total number of complaints w
 4. Create the data structure and do the update. For DataManager, I use the singleton design pattern since I want this DataManager to be like a server. So there should be at most one instance. 
 5. After inserted all the data, print the output into a new CSV file.
 
+Additional:
+To avoid invalid lines, like duplicate records. I checked the complaints id before inserting it. If this id existed I don't insert it a second time. Other cases like invalid content that leads to an improper split, or an invalid number. I also do the check before insert. These records will be skipped. 
+
+
 ## Repo directory structure
 Here is the repository directory structure. I create a run.sh so just run source run.sh,  then the program would process all the files in the input file folder.
 I have three java files. The Main.java scans the input folder and process all the CSV files sequentially. The CSVParse.java use BufferedReader to read line by line and send each line to the DataManager. The DataManager parses each line and updates the  ProductYear instance of the corresponding product type and year.
