@@ -30,8 +30,8 @@ I have three java files. The Main.java scans the input folder and process all th
     ├── run.sh
     ├── src
     │   └── Main.java
-    │   └── DataManager.py
-    │   └── CSVParser.py
+    │   └── DataManager.java
+    │   └── CSVParser.java
     ├── input
     │   └── complaints.csv
     ├── output
