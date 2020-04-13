@@ -24,8 +24,8 @@ public class Main {
         for (File csv : CSVList) {
             System.out.println("Processing " + csv.getName() + "...");
             DataManager dm = CSVParser.parser(csv);
-            dm.printInfo(outputDir+"/Result_"+csv.getName());
-            System.out.println("Output file: " + outputDir+"/Result_"+csv.getName() + " created!");
+            dm.printInfo(outputDir+"/report.csv");
+            System.out.println("Output file: " + outputDir+"/report.csv" + " created!");
             DataManager.clear();
         }
 
