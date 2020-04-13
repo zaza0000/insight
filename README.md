@@ -9,7 +9,7 @@ Since we want three different kinds of output (A: the total number of complaints
 | **product_m** |(A_m1, B_m1, C_m1) | (A_m2, B_m2, C_m2) | ... | (A_mn, B_mn, C_mn) |
 
 ## Data structure
-![image](https://github.com/zaza0000/insight/tree/master/IMG/data_structure.png)
+<img width="1101" alt="Screen Shot 2020-04-13 at 1 22 44 AM" src="https://user-images.githubusercontent.com/31771655/79094399-62055500-7d25-11ea-8f7b-1eb560378f66.png">
 
 ## Repo directory structure
 
