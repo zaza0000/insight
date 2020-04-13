@@ -1,5 +1,15 @@
 # Consumer Complaints
 
+Since we want three different kinds of output (A: the total number of complaints, B: the number of companies receiving a complaint, C: the highest percentage of complaints directed at a single company) categorized by each product and year. A storage structure would be needed like this:
+| Product \ Year | year_1 |  year_2 | ... | year_n |
+| --------- | --------- |--------- |--------- |--------- |
+| **product_1** | (A_11, B_11, C_11) | (A_12, B_12, C_12) | ... | (A_1n, B_1n, C_1n) |
+| **product_2** | (A_21, B_21, C_21) | (A_22, B_22, C_22) | ... | (A_2n, B_2n, C_2n) |
+| **...** | ... | ... | ... | ... |
+| **product_m** |(A_m1, B_m1, C_m1) | (A_m2, B_m2, C_m2) | ... | (A_mn, B_mn, C_mn) |
+
+## Data structure
+<img width="1101" alt="Screen Shot 2020-04-13 at 1 22 44 AM" src="https://user-images.githubusercontent.com/31771655/79094399-62055500-7d25-11ea-8f7b-1eb560378f66.png">
 
 ## Repo directory structure
 
