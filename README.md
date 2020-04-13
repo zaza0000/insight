@@ -15,8 +15,16 @@ To implement this table into real code, I designed two classes. One is the DataM
 
 The ProductYear class contains three variables: the total number of complaints which is one of our outputs; a hashmap indicates the number of complaints corresponding to different companies, the size of this hash map would be the answer for the number of companies receiving a complaint; an integer value to store the maximum complaint number among all the companies, we need this to compute the highest percentage of complaints directed at a single company. The basic function of the ProductYear class is to insert a new complaint record. Every time a new record comes in, we do an add-one to the total number of complaints, we update the hash map for the related company, and if the update leads to a larger complaint number, then update the maximum complaint number.
 
+## Workflow
+1. Scan the CSV folder and get all CSV files, my code is able to handle multiple files in the same folder.
+2. Read the first line, which is the field name, then we are able to know which one is needed and where is it. I create a hashmap to indicate the index of different fields.
+3. Read a line each time. Do a split by comma. I use regex to split comma only on the outside of double-quotes. 
+4. Create the data structure and do the update. For DataManager, I use the singleton design pattern since I want this DataManager to be like a server. So there should be at most one instance. 
+5. After inserted all the data, print the output into a new CSV file.
 
 ## Repo directory structure
+Here is the repository directory structure. I create a run.sh so just run source run.sh,  then the program would process all the files in the input file folder.
+I have three java files. The Main.java scans the input folder and process all the CSV files sequentially. The CSVParse.java use BufferedReader to read line by line and send each line to the DataManager. The DataManager parses each line and updates the  ProductYear instance of the corresponding product type and year.
 
     ├── README.md
     ├── run.sh
